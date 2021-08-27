@@ -2,6 +2,7 @@ import './Header.scss'
 import React, { useState } from 'react'
 import useMobile from "../../useMobile";
 import Drawer from '@material-ui/core/Drawer'
+import { FaHome, FaShoppingBag, FaQuestionCircle, FaPhoneSquareAlt } from 'react-icons/fa'
 
 const Header = () => {
   const isMobile = useMobile(768)
@@ -20,16 +21,53 @@ const Header = () => {
           open={open}
           onClose={() => setOpen(false)}
         >
-          <div className="header-menu">hello</div>
+          <div className="menu-mobile">
+            <ul>
+              <li>
+                <FaHome color="white" />
+                <span className="text-mobile">Home</span>
+              </li>
+              <div className="divider"></div>
+
+              <li>
+                <FaShoppingBag color="white" />
+                <span className="text-mobile">Product</span>
+              </li>
+              <div className="divider"></div>
+
+              <li>
+                <FaQuestionCircle color="white" />
+                <span className="text-mobile">Faq</span>
+              </li>
+              <div className="divider"></div>
+
+              <li>
+                <FaPhoneSquareAlt color="white" />
+                <span className="text-mobile">Contact</span>
+              </li>
+            </ul>
+          </div>
         </Drawer>
       </>
     )
   }
 
   return (
-    <div>
-      header desktop
-    </div>
+    <>
+      <div className="header-desktop">
+        <img className="logo-desktop" src="/img/left.svg" alt="" />
+
+        <div className="menu-desktop">
+          <ul>
+            <li className="text-desktop">Home</li>
+            <li className="text-desktop">Product</li>
+            <li className="text-desktop">Faq</li>
+            <li className="text-desktop">Contact</li>
+          </ul>
+        </div>
+      </div>
+
+    </>
   )
 
 
