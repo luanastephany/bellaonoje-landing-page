@@ -1,0 +1,124 @@
+.hero-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 1100px;
+  width: 100%;
+
+  .texts-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    span {
+      color: var(--subtitle);
+      font-weight: bold;
+      margin-top: 50px;
+      margin-bottom: 17px;
+    }
+
+    .title-mobile {
+      color: var(--title);
+      width: 410px;
+      height: 148px;
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 17px;
+    }
+
+    .subtitle-mobile {
+      color: var(--subtitle);
+      width: 340px;
+      height: 96px;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+  }
+
+  .mobile-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    gap: 17px;
+    width: 236px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.hero-desktop {
+  display: none;
+}
+
+
+//WEB 
+@media (min-width:769px) {
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./heroweb.png');
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 500px;
+
+    .texts-desktop {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      color: white;
+
+      span {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 70px;
+        margin-bottom: 17px;
+      }
+
+      .title-desktop {
+        font-size: 58px;
+        font-weight: bold;
+        width: 940px;
+        height: 160;
+      }
+
+      .subtitle-desktop {
+        font-size: 24px;
+        margin-top: 17px;
+        margin-bottom: 54px;
+      }
+    }
+
+    .desktop-btns {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-self: center;
+      gap: 17px;
+      width: 236px;
+    }
+
+    .hero-desk-img {
+      display: flex;
+      align-self: center;
+      width: 548px;
+      height: 640px;
+      position: absolute;
+      bottom: -520px;
+      object-fit: contain;
+    }
+  }
+  
+
+}
