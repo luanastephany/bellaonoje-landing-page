@@ -1,0 +1,151 @@
+.account-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .texts-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .howto-mobile {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .divider-mobile {
+      height: 2px;
+      width: 100%;
+      background-color: #e4e4e4;
+      margin-top: 40px;
+    }
+
+    .create-mobile {
+      color: var(--primary);
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      margin-top: 60px;
+    }
+
+    .title-create-mobile {
+      color: var(--title);
+      font-size: 40px;
+      width: 336px;
+      height: 228px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle-create-mobile {
+      color: var(--subtitle);
+      font-size: 24px;
+      width: 256px;
+      height: 150px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .img-mobile {
+    display: flex;
+    align-self: center;
+    height: 500px;
+    width: 256px;
+    box-shadow: 20px 0 30px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.account-desktop {
+  display: none;
+}
+
+//WEB
+@media (min-width:769px) {
+  .account-mobile {
+    display: none;
+  }
+
+  .account-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .texts-desktop {
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+     
+
+      .divider-desktop {
+      display: flex;
+      align-self: center;
+      height: 2px;
+      width: 885px;
+      background-color: #e4e4e4;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      
+      }
+
+      .howto-desktop {
+       font-size: 44px;
+        font-weight: 600;
+        align-self: center;
+        text-align: center;
+      }
+
+      //imagem e textos ao lado
+      .creating-desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 170px;
+        width: 100%;
+        margin-bottom: 55px;
+        margin-top: 80px;
+
+        .img-desktop {
+          width: 250px;
+        }
+
+        .description-desktop {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1;
+
+          .create-desktop {
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 7px;
+          }
+
+          .title-create-desktop {
+            color: var(--title);
+            font-size: 40px;
+            font-weight: bold;
+            width: 560px;
+            height: 114px;
+            line-height: 56px;
+            margin-bottom: 17px;
+          }
+          
+          .subtitle-create-desktop {
+            color: var(--subtitle);
+            font-size: 24px;
+            width: 467px;
+            height: 76px;
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+
+
+}
