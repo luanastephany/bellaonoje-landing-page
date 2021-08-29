@@ -1,5 +1,9 @@
 import './App.scss';
-import Header from "./components/Header/Header";
+import Footer from './components/Footer';
+import Header from "./components/Header";
+import Account from './sections/Account';
+import Download from './sections/Download';
+import Hero from './sections/Hero'
 
 function App() {
 
@@ -7,6 +11,10 @@ function App() {
   return (
     <main>
       <Header />
+      <Hero />
+      <Account />
+      <Download />
+      <Footer />
     </main>
   )
 }
