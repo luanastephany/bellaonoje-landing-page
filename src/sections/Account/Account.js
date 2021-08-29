@@ -16,7 +16,7 @@ const Account = () => {
 
         <div className="texts-mobile">
           <span className="create-mobile">Explore while shopping</span>
-          <h1 className="title-create-mobile">Shop for your favorites meal as e dey hot</h1>
+          <h1 className="title-create-mobile">Shop for your favorites meals</h1>
           <p className="subtitle-create-mobile">Shop for your favorite meals or drinks and enjoy while doing it.</p>
         </div>
         <img className="img-mobile" src="/img/account.png" alt="" />
@@ -51,7 +51,7 @@ const Account = () => {
           <div className="creating-desktop">
             <div className="description-desktop">
               <span className="create-desktop">Explore varieties</span>
-              <h1 className="title-create-desktop">Shop for your favorites meal as e dey hot.</h1>
+              <h1 className="title-create-desktop">Shop for your favorites meals</h1>
               <p className="subtitle-create-desktop">Shop for your favorite meals or drinks and enjoy while doing it.</p>
             </div>
             <img className="img-desktop" src="/img/shop.png" alt="" />

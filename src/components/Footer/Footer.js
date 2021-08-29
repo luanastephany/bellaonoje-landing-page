@@ -13,7 +13,7 @@ const Footer = () => {
           <FaFacebookSquare size={30} />
           <FaLinkedin size={30} />
         </div>
-        <div className="slogan">Just type what's on your mind and we'll </div>
+        <div className="slogan">Just type what's on your mind and we'll do it </div>
       </div>
 
 
